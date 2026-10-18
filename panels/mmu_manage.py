@@ -54,23 +54,23 @@ class Panel(ScreenPanel):
 
         self.labels = {
             'g_decrease': self._gtk.Button('decrease', None, scale=self.bts * 1.2),
-            'gate': self._gtk.Button('mmu_select_gate', 'Gate', 'color4'),
+            'gate': self._gtk.Button('mmu_select_gate', _("Gate"), 'color4'),
             'g_increase': self._gtk.Button('increase', None, scale=self.bts * 1.2),
-            'servo_up': self._gtk.Button('arrow-up', 'Servo Up', 'color1'),
-            'servo_move': self._gtk.Button('arrow-right', 'Servo Move', 'color2'),
-            'servo_down': self._gtk.Button('arrow-down', 'Servo Down', 'color3'),
-            'grip': self._gtk.Button('arrow-down', 'Grip', 'color2'),
-            'release': self._gtk.Button('arrow-up', 'Release', 'color3'),
-            'home': self._gtk.Button('home', 'Home', 'color2'),
-            'motors_off': self._gtk.Button('motor-off', 'Motors Off', 'color3'),
-            'checkgate': self._gtk.Button('mmu_checkgates', 'Check Gate', 'color4'),
-            'recover': self._gtk.Button('mmu_maintenance', 'Recover State...', 'color1'),
-            'load': self._gtk.Button('mmu_load', 'Load', 'color1'),
-            'unload': self._gtk.Button('mmu_unload', 'Unload', 'color1'), # Doubles as eject button
-            'sync': self._gtk.Button('mmu_synced_extruder', 'Sync', 'color2'),
-            'unsync': self._gtk.Button('mmu_extruder', 'Unsync', 'color2'),
-            'load_ext': self._gtk.Button('mmu_load_extruder', 'Load Ext', 'color3'),
-            'unload_ext': self._gtk.Button('mmu_unload_extruder', 'Unload Ext', 'color3'),
+            'servo_up': self._gtk.Button('arrow-up', _("Servo Up"), 'color1'),
+            'servo_move': self._gtk.Button('arrow-right', _("Servo Move"), 'color2'),
+            'servo_down': self._gtk.Button('arrow-down', _("Servo Down"), 'color3'),
+            'grip': self._gtk.Button('arrow-down', _("Grip"), 'color2'),
+            'release': self._gtk.Button('arrow-up', _("Release"), 'color3'),
+            'home': self._gtk.Button('home', _("Home"), 'color2'),
+            'motors_off': self._gtk.Button('motor-off', _("Motors Off"), 'color3'),
+            'checkgate': self._gtk.Button('mmu_checkgates', _("Check Gate"), 'color4'),
+            'recover': self._gtk.Button('mmu_maintenance', _("Recover State..."), 'color1'),
+            'load': self._gtk.Button('mmu_load', _("Load"), 'color1'),
+            'unload': self._gtk.Button('mmu_unload', _("Unload"), 'color1'), # Doubles as eject button
+            'sync': self._gtk.Button('mmu_synced_extruder', _("Sync"), 'color2'),
+            'unsync': self._gtk.Button('mmu_extruder', _("Unsync"), 'color2'),
+            'load_ext': self._gtk.Button('mmu_load_extruder', _("Load Ext"), 'color3'),
+            'unload_ext': self._gtk.Button('mmu_unload_extruder', _("Unload Ext"), 'color3'),
             'eject_img': self._gtk.Image('mmu_eject'), # Alternative for unload button to fully eject
         }
         self.labels['unload_img'] = self.labels['unload'].get_image()

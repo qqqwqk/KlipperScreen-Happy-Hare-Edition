@@ -8,16 +8,15 @@ msgstr ""
 "Project-Id-Version: KlipperScreen\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 12:31-0300\n"
-"PO-Revision-Date: 2024-11-27 21:00+0000\n"
-"Last-Translator: Sun Zheng <123456789sunzheng@gmail.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
-"projects/klipperscreen/klipperscreen/zh_Hans/>\n"
+"PO-Revision-Date: 2025-10-10 15:37+0800\n"
+"Last-Translator: Jingyuan Wang <qq695023921@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/klipperscreen/klipperscreen/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Poedit 3.7\n"
 
 #, python-format
 msgid "%s will be updated to version"
@@ -463,8 +462,7 @@ msgstr "Klipper正在启动"
 msgid "Klipper will reboot"
 msgstr "Klipper将重新启动"
 
-msgid ""
-"LOAD_FILAMENT/UNLOAD_FILAMENT are hidden and should be used from extrude"
+msgid "LOAD_FILAMENT/UNLOAD_FILAMENT are hidden and should be used from extrude"
 msgstr "加载耗材/卸载耗材 已被隐藏，请前往在挤出控制界面"
 
 msgid "Language"
@@ -493,9 +491,6 @@ msgstr "剩余时间："
 
 msgid "Limits"
 msgstr "打印机限制"
-
-msgid "Load"
-msgstr "载入耗材"
 
 msgid "Loading..."
 msgstr "加载中..."
@@ -908,9 +903,6 @@ msgstr "未知加热器"
 msgid "Unknown security type"
 msgstr "未知的安全类型"
 
-msgid "Unload"
-msgstr "卸载耗材"
-
 msgid "Unlock"
 msgstr "解锁"
 
@@ -1009,6 +1001,306 @@ msgid "second"
 msgid_plural "seconds"
 msgstr[0] "秒"
 
+msgid "MMU"
+msgstr "多材料单元(MMU)"
+
+msgid "Manage TTG..."
+msgstr "管理通道映射(TTG)"
+
+msgid "Filaments..."
+msgstr "耗材..."
+
+msgid "Spoolman..."
+msgstr "Spoolman..."
+
+msgid "Load Tool..."
+msgstr "装载工具..."
+
+msgid "Preload Gate..."
+msgstr "预装载通道..."
+
+msgid "Eject Gate..."
+msgstr "弹出通道..."
+
+msgid "Check Gate..."
+msgstr "检测通道..."
+
+msgid "Select Gate..."
+msgstr "选择通道..."
+
+msgid "Select Bypass"
+msgstr "选择旁通"
+
+msgid "Display Status"
+msgstr "显示状态"
+
+msgid "Print Stats"
+msgstr "打印机状态"
+
+msgid "Reset Stats"
+msgstr "重设状态"
+
+msgid "Enable E.Spool"
+msgstr "启用无尽料盘"
+
+msgid "Disable E.Spool"
+msgstr "禁用无尽料盘"
+
+msgid "Disable LED"
+msgstr "禁用LED"
+
+msgid "LED Gate Status"
+msgstr "通道状态LED"
+
+msgid "LED Fil. Color"
+msgstr "耗材颜色LED"
+
+msgid "user def"
+msgstr "用户默认值"
+
+msgid "MMU Setup"
+msgstr "MMU安装"
+
+msgid "Test Grip"
+msgstr "耗材咬合测试"
+
+msgid "Form Tip"
+msgstr "尖端成型"
+
+msgid "Servo UP"
+msgstr "舵机-抬起"
+
+msgid "Servo MOVE"
+msgstr "舵机-移动"
+
+msgid "Servo DOWN"
+msgstr "舵机-压下"
+
+msgid "Cal. Encoder"
+msgstr "校准编码器"
+
+msgid "Calibrate ALL"
+msgstr "全部校准"
+
+msgid "Cal. Gate..."
+msgstr "校准通道"
+
+msgid "Select Tool T{i}"
+msgstr "选择工具 T{i}"
+
+msgid "Select Gate #{i}"
+msgstr "选择通道 #{i}"
+
+msgid "T{i}"
+msgstr "T{i}"
+
+msgid "Eject Gate #{i}"
+msgstr "弹出通道 #{i}"
+
+msgid "Check Gate #{i}"
+msgstr "检测通道 #{i}"
+
+msgid "Calibrate #{i}"
+msgstr "校准通道 #{i}"
+
+msgid "Gates"
+msgstr "通道"
+
+msgid "Manage..."
+msgstr "管理..."
+
+msgid "Load T0"
+msgstr "装载 T0"
+
+msgid "Tools..."
+msgstr "工具..."
+
+msgid "Unload"
+msgstr "卸载"
+
+msgid "MMU Pause"
+msgstr "MMU暂停"
+
+msgid "Last Error"
+msgstr "上次报错"
+
+msgid "Extrude..."
+msgstr "挤出..."
+
+msgid "More..."
+msgstr "更多设置"
+
+msgid "Ts:"
+msgstr "工具头传感器:"
+
+msgid "Gates: "
+msgstr "通道号:"
+
+msgid "Tools: "
+msgstr "工具号:"
+
+msgid "Avail: "
+msgstr "可用性:"
+
+msgid "Selct: "
+msgstr "选择器:"
+
+msgid "Gate"
+msgstr "通道"
+
+msgid "Servo Up"
+msgstr "舵机-抬起"
+
+msgid "Servo Move"
+msgstr "舵机-移动"
+
+msgid "Servo Down"
+msgstr "舵机-压下"
+
+msgid "Grip"
+msgstr "咬合"
+
+msgid "Release"
+msgstr "释放"
+
+msgid "Motors Off"
+msgstr "关闭电机"
+
+msgid "Check Gate"
+msgstr "检测通道"
+
+msgid "Recover State..."
+msgstr "恢复状态..."
+
+msgid "Load"
+msgstr "装载"
+
+msgid "Sync"
+msgstr "同步"
+
+msgid "Unsync"
+msgstr "非同步"
+
+msgid "Load Ext"
+msgstr "挤出机装载"
+
+msgid "Unload Ext"
+msgstr "挤出机卸载"
+
+msgid "Check filament availabily in all MMU gates?\n"
+"\n"
+"Are you sure you want to continue?"
+msgstr "将自动检测多耗材单元上所有通道的可用性\n"
+"\n"
+"请确认是否继续"
+
+msgid "Load #"
+msgstr "装载 #"
+
+msgid "This will reset MMU positional state and require re-homing\n"
+"\n"
+"Sure you want to continue?"
+msgstr "这将重设多材料单元的定位信息且需要重新归位\n"
+"\n"
+"请确认是否继续"
+
+msgid "Gate #"
+msgstr "通道 #"
+
+msgid "Bypass"
+msgstr "旁通"
+
+msgid "Unknown"
+msgstr "未知"
+
+msgid "Reset MMU..."
+msgstr "重设多材料单元..."
+
+msgid "Auto Recover"
+msgstr "自动修复"
+
+msgid "Set State..."
+msgstr "设定状态..."
+
+msgid "Current MMU state:"
+msgstr "当前多材料单元状态:"
+
+msgid "Reset state to:"
+msgstr "重设状态至:"
+
+msgid "T"
+msgstr "T"
+
+msgid "n/a"
+msgstr "空"
+
+msgid "Filament: Loaded"
+msgstr "耗材: 已装载"
+
+msgid "Filament: Unloaded"
+msgstr "耗材: 已卸载"
+
+msgid "Filament: Unknown"
+msgstr "耗材: 未知"
+
+msgid "Tool: "
+msgstr "工具: "
+
+msgid "Gate: "
+msgstr "通道: "
+
+msgid "Filament: "
+msgstr "耗材: "
+
+msgid "\n"
+"\n"
+"Specified gate may not the correct gate for T"
+msgstr "\n"
+"\n"
+"指定的通道可能不是正确的通道在T"
+
+msgid ".\n"
+"Proceed will update the TTG map and mark the gate available"
+msgstr ".\n"
+"继续将更新通道映射并将该通道标记为可用"
+
+msgid "\n"
+"EndlessSpool group includes gates: "
+msgstr "\n"
+"无尽料盘组包含以下通道: "
+
+msgid "Bypass (on bypass gate) with filament "
+msgstr "旁通(旁通通道)的耗材"
+
+msgid "Loaded"
+msgstr "已装载"
+
+msgid "Unloaded"
+msgstr "已卸载"
+
+msgid "This will set the MMU state to:\n"
+"\n"
+msgstr "这将设定多材料单元的状态至:\n"
+"\n"
+
+msgid "\n"
+"\n"
+"Sure you want to continue?"
+msgstr "\n"
+"\n"
+"确认以继续"
+
+msgid "This will reset persisted MMU state to defaults including TTG map,\n"
+"\n"
+"EndlessSpool groups, Gate map (material and type) and current selector position\n"
+"\n"
+"Sure you want to continue?"
+msgstr "这将会将保存的多材料单元状态重设至默认值，包括TTG映射，\n"
+"\n"
+"无尽料盘组，通道映射(材质与类型)和选择器坐标\n"
+"\n"
+"确认以继续"
+
 #~ msgid "Hide temp."
 #~ msgstr "隐藏温度"
 
@@ -1060,9 +1352,7 @@ msgstr[0] "秒"
 #~ msgid "Bed screw configuration:"
 #~ msgstr "热床螺丝配置："
 
-#~ msgid ""
-#~ "Not supported for auto-detection, it needs to be configured in "
-#~ "klipperscreen.conf"
+#~ msgid "Not supported for auto-detection, it needs to be configured in klipperscreen.conf"
 #~ msgstr "不支持自动检测，需要在klpperscreen.conf中进行配置"
 
 #~ msgid "Unknown screw position"

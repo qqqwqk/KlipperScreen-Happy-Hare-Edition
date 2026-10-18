@@ -76,23 +76,23 @@ class Panel(ScreenPanel):
         }
 
         self.labels = {
-            'check_gates': self._gtk.Button('mmu_checkgates', "Gates", 'color1'),
-            'manage': self._gtk.Button('mmu_manage', "Manage...",'color2'),
+            'check_gates': self._gtk.Button('mmu_checkgates', _("Gates"), 'color1'),
+            'manage': self._gtk.Button('mmu_manage', _("Manage..."),'color2'),
             't_decrease': self._gtk.Button('decrease', None, scale=self.bts * 1.2),
-            'tool': self._gtk.Button('mmu_extruder', 'Load T0', 'color2'),
+            'tool': self._gtk.Button('mmu_extruder', _("Load T0"), 'color2'),
             't_increase': self._gtk.Button('increase', None, scale=self.bts * 1.2),
-            'picker': self._gtk.Button('mmu_tool_picker', 'Tools...', 'color3'),
-            'unload': self._gtk.Button('mmu_unload', 'Unload', 'color4'), # Doubles as eject button
-            'pause': self._gtk.Button('pause', 'MMU Pause', 'color1'),
-            'message': self._gtk.Button('warning', 'Last Error', 'color1'),
-            'unlock': self._gtk.Button('heat-up', 'Unlock', 'color2'),
-            'resume': self._gtk.Button('resume', 'Resume', 'color3'),
-            'extrude': self._gtk.Button('extrude', 'Extrude...', 'color4'),
-            'more': self._gtk.Button('mmu_more', 'More...', 'color1'),
+            'picker': self._gtk.Button('mmu_tool_picker', _("Tools..."), 'color3'),
+            'unload': self._gtk.Button('mmu_unload', _("Unload"), 'color4'), # Doubles as eject button
+            'pause': self._gtk.Button('pause', _("MMU Pause"), 'color1'),
+            'message': self._gtk.Button('warning', _("Last Error"), 'color1'),
+            'unlock': self._gtk.Button('heat-up', _("Unlock"), 'color2'),
+            'resume': self._gtk.Button('resume', _("Resume"), 'color3'),
+            'extrude': self._gtk.Button('extrude', _("Extrude..."), 'color4'),
+            'more': self._gtk.Button('mmu_more', _("More..."), 'color1'),
             'tool_icon': self._gtk.Image('mmu_extruder', self._gtk.img_width * 0.8, self._gtk.img_height * 0.8),
             'tool_label': Gtk.Label('Unknown'),
             'filament': Gtk.Label('Filament: Unknown'),
-            'sensor': Gtk.Label('Ts:'),
+            'sensor': Gtk.Label(_("Ts:")),
             'sensor_state': Gtk.Label('   '),
             'select_bypass_img': self._gtk.Image('mmu_select_bypass'), # Alternative for tool
             'load_bypass_img': self._gtk.Image('mmu_load_bypass'),     # Alternative for picker
@@ -302,7 +302,7 @@ class Panel(ScreenPanel):
     def select_check_gates(self, widget):
         self._screen._confirm_send_action(
             None,
-            "Check filament availabily in all MMU gates?\n\nAre you sure you want to continue?",
+            _("Check filament availabily in all MMU gates?\n\nAre you sure you want to continue?"),
             "printer.gcode.script",
             {'script': "MMU_CHECK_GATE ALL=1 QUIET=1"}
         )
@@ -386,18 +386,18 @@ class Panel(ScreenPanel):
             self.labels['tool_icon'].set_from_pixbuf(self.labels['tool_icon_pixbuf'])
         if tool == self.TOOL_GATE_BYPASS:
             self.labels['picker'].set_image(self.labels['load_bypass_img'])
-            self.labels['picker'].set_label(f"Load")
+            self.labels['picker'].set_label(_("Load"))
             self.labels['unload'].set_image(self.labels['unload_bypass_img'])
-            self.labels['unload'].set_label(f"Unload")
+            self.labels['unload'].set_label(_("Unload"))
         else:
             self.labels['picker'].set_image(self.labels['tool_picker_img'])
-            self.labels['picker'].set_label(f"Tools...")
+            self.labels['picker'].set_label(_("Tools..."))
             if filament != "Unloaded":
                 self.labels['unload'].set_image(self.labels['unload_img'])
-                self.labels['unload'].set_label("Unload")
+                self.labels['unload'].set_label(_("Unload"))
             else:
                 self.labels['unload'].set_image(self.labels['eject_img'])
-                self.labels['unload'].set_label("Eject")
+                self.labels['unload'].set_label(_("Eject"))
 
     def update_tool_buttons(self, tool_sensitive=True):
         mmu = self._printer.get_stat("mmu")
@@ -614,10 +614,10 @@ class Panel(ScreenPanel):
         num_gates = len(gate_status)
 
         multi_tool = False
-        msg_gates = "Gates: "
-        msg_tools = "Tools: "
-        msg_avail = "Avail: "
-        msg_selct = "Selct: "
+        msg_gates = _("Gates: ")
+        msg_tools = _("Tools: ")
+        msg_avail = _("Avail: ")
+        msg_selct = _("Selct: ")
         for g in range(num_gates):
             color = self.get_rgb_color(gate_color[g])
             filament_icon = ("█") if not markup or color == "" else (f"<span color='{color}'>█</span>")
